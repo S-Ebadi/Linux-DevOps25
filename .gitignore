@@ -1,0 +1,14 @@
+# Ignore OS-specific environment files
+configs/.env
+configs/.env.*
+
+# Ignore local logs
+logs/
+
+# Ignore system files and temp data
+*.log
+*.DS_Store
+Thumbs.db
+__pycache__/
+*.swp
+
