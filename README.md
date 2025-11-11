@@ -94,7 +94,7 @@ bash scripts/setup/install.sh
 One repo to rule them all,
 One pipeline to find them,
 One YAML to build them all,
-And in production bind them —
+And in production bind them.
 In the land of CI/CD where the logs lie deep.
 
 (– S-Ebadi, keeper of the main branch)
