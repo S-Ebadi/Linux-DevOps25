@@ -31,7 +31,10 @@ logs/
   └─ ubuntu/       # Ubuntu session logs
 docs/           # Technical documentation and module notes
 misc/           # Temporary or experimental files
-## ⚙️ Automated Setup Flow
+
+---
+
+⚙️ Automated Setup Flow
 Each environment automatically runs the following sequence at terminal startup:
 
 Bootstrap initialization
@@ -63,7 +66,9 @@ csharp
 Kopiera kod
 [2025-11-11_03-32-44] Log routed from fedora
 
-## 🧩 Installation Instructions
+---
+
+🧩 Installation Instructions
 macOS
 bash
 Kopiera kod
@@ -95,7 +100,9 @@ bash
 Kopiera kod
 bash ~/DevOps/LinuxDOE25/bootstrap.sh >/dev/null 2>&1
 
-## 🔐 SSH Configuration
+---
+
+🔐 SSH Configuration
 macOS
 bash
 Kopiera kod
@@ -128,7 +135,9 @@ bash
 Kopiera kod
 ssh-add ~/.ssh/id_ed25519
 
-## 🚀 Bootstrap Script Summary
+--- 
+
+🚀 Bootstrap Script Summary
 File: bootstrap.sh
 
 bash
@@ -139,7 +148,9 @@ bash scripts/setup/install.sh
 bash scripts/maintenance/auto_route.sh
 Executed automatically at every terminal startup.
 
-## 🧠 Knowledge Outcomes
+---
+
+🧠 Knowledge Outcomes
 Domain	Skills Demonstrated
 Linux CLI	Navigation, file ops, permissions, process mgmt
 Bash scripting	Conditional logic, environment detection, I/O handling
@@ -148,7 +159,9 @@ Git & Version Control	Repo structure, pull/rebase, commit workflows
 Automation	Bootstrapping, logging, self-healing environment
 DevOps Principles	Reproducibility, consistency, IaC fundamentals
 
-## 🧾 Testing Verification
+---
+
+🧾 Testing Verification
 Run:
 
 bash
@@ -160,7 +173,9 @@ csharp
 Kopiera kod
 [2025-11-11_03-32-44] Log routed from ubuntu
 
-## 🧙‍♂️ Final Words
+---
+
+🧙‍♂️ Final Words
 One repo to rule them all,
 One bootstrap to bind them,
 One script to route them all,
