@@ -15,14 +15,17 @@ A unified workspace for Bash scripting, system monitoring, and DevOps/MLOps auto
 ## 🧱 Repository Layout
 
 ```text
-configs/        # OS-specific shell configs (.bashrc variants)
-docs/           # Course notes, module summaries, technical references
-logs/           # Environment-scoped logs and execution reports
+configs/        # Environment variables and per-OS configs (.env, .bashrc overrides)
 scripts/
-  ├─ setup/        # Bootstrap and installation scripts
-  ├─ maintenance/  # Cleanup, backup, and versioning routines
-  └─ monitor/      # Resource monitoring and automation helpers
-misc/           # Experimental utilities or scratch work
+  ├─ setup/        # Installation and bootstrap scripts
+  ├─ maintenance/  # Logging, cleanup, routing
+  └─ monitor/      # System monitoring utilities
+logs/
+  ├─ mac/          # macOS session logs
+  ├─ fedora/       # Fedora session logs
+  └─ ubuntu/       # Ubuntu session logs
+docs/           # Technical documentation and module notes
+misc/           # Temporary or experimental files
 ```
 
 ---
