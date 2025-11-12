@@ -1,4 +1,3 @@
-<!-- Professionellt omformat dokument. Allt ursprungsinnehåll bevarat semantiskt. -->
 
 # Bash Guide Chapter 3 – Assigned Exercises
 
@@ -25,7 +24,6 @@
 ```bash
 VAR1="thirteen"
 VAR2="13"
-
 VAR3="Happy Birthday"
 ```
 
@@ -41,7 +39,7 @@ echo $VAR1 $VAR2 "$VAR3"
 thirteen 13 Happy Birthday
 ```
 
-**Why it Matters:** Understanding how to declare and print variables is the foundation of Bash scripting and configuration.
+**Why it Matters:** Understanding how to declare and print variables is the basics of Bash scripting and configuration.
 
 ### 2 – Display Variable Values
 
@@ -51,7 +49,6 @@ thirteen 13 Happy Birthday
 
 ```bash
 echo "VAR1: $VAR1"
-
 echo "VAR2: $VAR2"
 echo "VAR3: $VAR3"
 ```
@@ -60,12 +57,11 @@ echo "VAR3: $VAR3"
 
 ```text
 VAR1: thirteen
-
 VAR2: 13
 VAR3: Happy Birthday
 ```
 
-**Why it Matters:** Echoing variables confirms they hold expected data — a fundamental diagnostic technique in scripting.
+**Why it Matters:** Echoing variables confirms they hold expected data, a somewhat important diagnostic technique
 
 ### 3 – Identify Variable Scope
 
@@ -74,7 +70,6 @@ VAR3: Happy Birthday
 **Command:**
 
 ```bash
-
 printenv | grep VAR
 ```
 
@@ -82,7 +77,6 @@ printenv | grep VAR
 
 ```text
 (no output – they’re local, not exported)
-
 ```
 
 **Why it Matters:** By default, Bash variables exist only in the current session unless you explicitly export them.
@@ -95,7 +89,6 @@ printenv | grep VAR
 
 ```bash
 unset VAR3
-
 echo $VAR3
 ```
 
@@ -103,10 +96,9 @@ echo $VAR3
 
 ```text
 (no output)
-
 ```
 
-**Why it Matters:** unset cleans up variables — useful when handling secrets, tokens, or temporary values.
+**Why it Matters:** unset cleans up variables, useful when handling secrets, tokens, or temporary values.
 
 ### 5 – Check Variables in a New Terminal
 
@@ -116,17 +108,15 @@ echo $VAR3
 
 ```bash
 echo $VAR1 $VAR2
-
 ```
 
 **Expected Output:**
 
 ```text
-
 (blank output)
 ```
 
-**Why it Matters:** Local variables vanish when a session closes — global persistence requires export or startup files.
+**Why it Matters:** Local variables vanish when a session closes, global persistence requires export or startup files.
 
 ### 6 – Add a Global Login Greeting
 
@@ -135,7 +125,6 @@ echo $VAR1 $VAR2
 **Command:**
 
 ```bash
-
 sudo nano /etc/profile
 ```
 
@@ -143,7 +132,6 @@ sudo nano /etc/profile
 
 ```bash
 echo "Welcome, $USER! Have a productive session on $(hostname)."
-
 ```
 
 **Steps:** Save (Ctrl+O, Enter, Ctrl+X). Log out and back in to test.
@@ -152,10 +140,9 @@ echo "Welcome, $USER! Have a productive session on $(hostname)."
 
 ```text
 Welcome, said! Have a productive session on devbox.
-
 ```
 
-**Why it Matters:** You’re modifying system-wide environment behavior — foundational DevOps configuration skill.
+**Why it Matters:** You’re modifying system-wide environment behavior
 
 ### 7 – Customize the Root Prompt
 
@@ -165,7 +152,6 @@ Welcome, said! Have a productive session on devbox.
 
 ```bash
 sudo nano /root/.bashrc
-
 ```
 
 **Add at the end:**
@@ -184,13 +170,11 @@ Log in as root:
 
 ```bash
 sudo -i
-
 ```
 
 **Expected Output:**
 
 ```text
-
 Prompt turns red and shows current directory.
 ```
 
@@ -220,7 +204,7 @@ su - testuser
 testuser@hostname:/home/testuser$
 ```
 
-**Why it Matters:** /etc/skel defines defaults for all new users — ensures consistency in multi-user systems.
+**Why it Matters:** /etc/skel defines defaults for all new users
 
 ### 9 – Rectangle Area Script
 
@@ -279,7 +263,7 @@ Area:   40 square units
 ------------------------------
 ```
 
-**Why it Matters:** Combines variables, math expansion, formatting, and permissions — essential Bash scripting fundamentals.
+**Why it Matters:** Combines variables, math expansion, formatting, and permissions
 
 **Expected Output:**
 
@@ -293,7 +277,7 @@ Area:   40 square units
 ------------------------------
 ```
 
-**Why it Matters:** Combines variables, math expansion, formatting, and permissions — essential Bash scripting fundamentals.
+**Why it Matters:** Combines variables, math expansion, formatting, and permissions  
 
 ---
 
